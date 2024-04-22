@@ -53,7 +53,7 @@ public class ClientHandler implements Runnable{
 
     public void removeClientHandler(){
         clientHandlers.remove(this);
-        broadcastMessage("SERVER : " + clientUsername + " est sorti du chat");
+        broadcastMessage("SERVER : " + clientUsername + " est parti");
     }
 
     public void closeEverything(Socket socket, BufferedReader bufferedReader, BufferedWriter bufferedWriter){
